@@ -17,7 +17,7 @@
 掌握使用Object根类的toString（）方法,应用在相关对象的信息输出中。
 ## 实验过程  
 ## 实验流程图
-
+![alt console](https://m.qpic.cn/psc?/V50ini880vFPiW2LYxFK2RoQRD3UEErn/bqQfVz5yrrGYSXMvKr.cqRvTvb*WW0EHqJ8PifOJBPpIUvta8pwZCTwwAagu9uWVnWW6Yl6v.fq1m9mnghI5DrVojKJiQbeVxvlN5hCBZV0!/b&bo=BgSGAgAAAAADB6Q!&rf=viewer_4)
 
 ## 核心方法 
 ## 实验结果 
