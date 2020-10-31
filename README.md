@@ -95,4 +95,4 @@ Student通过上转型的方式实例化其中需要得到老师的分数
 ## 实验结果 
 ![alt console](https://m.qpic.cn/psc?/V50ini880vFPiW2LYxFK2RoQRD3UEErn/bqQfVz5yrrGYSXMvKr.cqdtOrK8CiQ1q7jVmA2XN9FBGG.r4LzZb7Q0hh1UkeZFtZt5f3WZ1QVvEGewzGz6DbIQoNr06Xr40sFnrULbfil4!/b&bo=bwTOAAAAAAADB4c!&rf=viewer_4)
 ## 实验感想
-通过本次实验理解并会使用了类的继承用法，掌握了super调用父类中的属性和tostring方法输出数据。但最初继承逻辑不合理，修改很久才改完，还是对继承的逻辑有所欠缺，后期需要更多地学习。总之，通过本次实验收获很大。
+通过本次实验理解并会使用了类的继承用法，掌握了super调用父类中的属性和tostring方法输出数据。但最初继承逻辑不合理，修改很久才改完，还是对继承的逻辑有所欠缺，后期需要更多地学习。总之，通过本次实验收获很大
