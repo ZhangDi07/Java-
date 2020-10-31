@@ -79,20 +79,50 @@ Student通过上转型的方式在实例化前需要得到老师的分数
  ```
  3.方法3 构造方法
  ```
- //构造方法
- public Course(){
-  
- }
- public Course(int cou_num,String cou_name,String station,String time,String teacher_name,int score){
-  this.cou_num=cou_num;
-  this.cou_name=cou_name;
-  this.station=station;
-  this.time=time;
-  this.teacher_name=teacher_name;
-  this.score=score;
- }
+  //构造方法
+	public Person(){
+		
+	}
+	//学生
+	public Person(int id,String name,int age,String sex,int mark){
+		this.id=id;
+		this.name=name;
+		this.age=age;
+		this.sex=sex;
+		this.mark=mark;
+	}
+	//老师
+	public Person(int id,String name,int age,String sex,String course_name){
+		this.id=id;
+		this.name=name;
+		this.age=age;
+		this.sex=sex;
+		this.course_name=course_name;
+	}
  ```
-
+ 4.方法4 调用父类的构造方法传入参数
+ ```
+ public Teacher(int id,String name,int age,String sex,String course_name ){
+		//调用父类构造方法并传值
+		super(id,name,age,sex,course_name);
+	}
+  ```
+ 5.方法5 main方法
+ ```
+ 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person p=new Teacher(001, "二狗", 24, "男", "java");//向上转型
+		Course c=new Course(1306, p.getCourse_name(), "综合楼", "13:30", p.getName(), 2);
+		Teacher t=(Teacher) p;//向下转型
+		t.inputMark(86);
+		Person p1=new Student(2020066, "狗子", 22, "女",p.getMark());
+		Student s=(Student) p1;//向下转型
+        s.choose(c); //调用选课方法
+	    System.out.println(c);   
+	    s.nochoose(c); //调用退课的方法
+	    System.out.println(c);   
+	}
+  ```
 ## 实验结果 
 ![alt console](https://m.qpic.cn/psc?/V50ini880vFPiW2LYxFK2RoQRD3UEErn/bqQfVz5yrrGYSXMvKr.cqdtOrK8CiQ1q7jVmA2XN9FBGG.r4LzZb7Q0hh1UkeZFtZt5f3WZ1QVvEGewzGz6DbIQoNr06Xr40sFnrULbfil4!/b&bo=bwTOAAAAAAADB4c!&rf=viewer_4)
 ## 实验感想
